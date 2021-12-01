@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> home-blog
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
+        </title>
+</head>
+<body
+
+<h1>WELCOM TO MY SAND-BOX</h1>
+    <main role="main" class="container">
+        <div class="col-md-4">
+            <h3 id="stat-main-title">Commands:: USE BRYTHON OR PYTHON EDITOR:: RUN EDITOR-- GO TO CHROME --> MORE TOOLS --> DEVELOPER TOOLS --> CONSOLE </h3>
+            <p class="text-muted">
+            <ul class="list-group">
+                <li class="list-grou-item list-item-light">
+                    <h4 class="stat-title"> Function:</h4>
+                    <form action="simple_function"></form> ##
+                        <button id="stat-btn" class="btn">Click_Me<3</button>
+                    </form>
+                </li>
+
+        </div>
+        </ul>
+        </p>
+
+
+        ##########
+        ########
+        #
+
+        <br> To Invoke Internal Scripting
+        Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+        <button onclick="location.href='{% url 'simple_function' %}'">Execute Internal Script </button><hr>
+        {% if ip_data %}
+
+        {{ip_data | safe}}
+
+        {% endif %}
+        {{ip_data1}} ip_data
+
+        <br>
+        <br>
+        <form action="/blog/external/" method="post">
+            {% csrf_token %}
+            Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+            {{data_external}} data external
+            {{ip_data1}} ip_data1
+            <input type="submit" value="Execute External Python Script">
+            <br>
+
+        </form>
+
+        #### brython ###
+
+        <iframe src="http://brython.info/console.html" title='Shell' width="1000" height="400"></iframe>
+        <br>
+        <br>
+        <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+        <br>
+        <br>
+        ########### home ####
+
+        #### yet another editor ###
+
+        <iframe src="http://brython.info/console.html" title='Shell' width="1000" height="400"></iframe>
+        <br>
+        <br>
+
+        <iframe src="https://urfdvw.github.io/Brython-Editor/" title='github shell' width="1000" height="400"></iframe>
+
+
+        <br>
+        <br>
+
+        practice board
+
+
+
+        <iframe src="https://shell.cloud.google.com/?hl=en_US&fromcloudshell=true&show=ide%2Cterminal" title='HTML-EDITOR ' width="800" height="400"></iframe>
+
+        <p><a href="https://shell.cloud.google.com/?hl=en_US&fromcloudshell=true&show=ide%2Cterminal" target="iframe_a">brython.info</a></p>
+
+
+
+        ## brython targfet
+        ### GURU 99
+        <iframe src="https://www.guru99.com/execute-html-online.html" name="brython-target" title="brython editor"  width="1000" height="400" ></iframe>
+        <p><a href="https://www.guru99.com/Customization/CodeEditorFiles/HTMLEditorFiles/CustomHTMLScript.js" target="iframe_a">brython.info</a></p>
+
+
+
+        ## brython target
+        <iframe src="http://brython.info/console.html" name="brython-target" title="brython editor"  width="1000" height="400" ></iframe>
+        <p><a href=http://brython.info/console.html" target="iframe_a">brython.info</a></p>
+
+
+
+        <iframe src="https://shell.cloud.google.com/?hl=en_US&fromcloudshell=true&show=ide%2Cterminal" name="brython-target" title="brython editor"  width="1000" height="400" ></iframe>
+        <p><a href="https://shell.cloud.google.com/?hl=en_US&fromcloudshell=true&show=ide%2Cterminal" target="iframe_a">brython.info</a></p>
+
+        ### brython --- edit in chrome console
+        <iframe src="https://urfdvw.github.io/Brython-Editor/" name="brython-git" title="brython-get"   width="1000" height="1000" ></iframe>
+        <p><a href="https://urfdvw.github.io/Brython-Editor/" target="iframe_a">https://urfdvw.github.io/Brython-Editor/</a></p>
+
+
+        <!--<form action="/simple_function/" method="post"
+        <p><a href="http://76.172.85.231" target="iframe_a">home.com</a></p>
+
+
+
+
+
+
+    </main>
+
+
+</body>
+</html>

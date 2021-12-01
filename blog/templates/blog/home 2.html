@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home-blog</title>
+</head>
+<body>
+    <h1>home</h1>
+    <main role="main" class="container">
+        <div class="col-md-4">
+            <h3 id="stat-main-title">Commands</h3>
+            <p class="text-muted">
+            <ul class="list-group">
+                <li class="list-grou-item list-item-light">
+                    <h4 class="stat-title"> Function:</h4>
+                    <form action="simple_function"></form> ## action indicates where data is sent to
+                        <button id="stat-btn" class="btn">Click_Me<3</button>
+                    </form>
+                </li>
+
+        </div>
+        </ul>
+        </p>
+        <br> onclick button
+
+        Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+        <button onclick="location.href='{% url 'simple_function' %}'">Execute Script </button><hr>
+        {% if ip_data %}
+
+        {{ip_data | safe}}
+
+        {% endif %}
+        {{ip_data1}} ip_data
+
+       <!--<form action="/simple_function/" method="post"
+       <form action="simple_function" method="post">
+            {% csrf_token %}
+            Text:
+            <input type="text" name="param" required>  ## Test with action /simple_function/ <br><br>
+            {{data_external}}
+            <input type="submit" value="Execute External Python Script">
+> -->
+
+        <form action="/blog/external/" method="post">
+            {% csrf_token %}
+            Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+            {{data_external}} data external
+            {{ip_data1}} ip_data1
+            <input type="submit" value="Execute External Python Script">
+
+
+        </form>
+    </main>
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>home-blog</title>
+</head>
+<body>
+    {% block content %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <h1>App-Home</h1>
+    <main role="main" class="container">
+        <div class="col-md-4">
+            <h3 id="stat-main-title">Commands</h3>
+            <p class="text-muted">
+            <ul class="list-group">
+                <li class="list-grou-item list-item-light">
+                    <h4 class="stat-title"> Function:</h4>
+                    <form action="simple_function"></form> ## action indicates where data is sent to
+                        <button id="stat-btn" class="btn">Click_Me<3</button>
+                    </form>
+                </li>
+
+        </div>
+        </ul>
+        </p>
+        <br> onclick button
+
+        Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+        <button onclick="location.href='{% url 'simple_function' %}'">Execute Script </button><hr>
+        {% if ip_data %}
+
+        {{ip_data | safe}}
+
+        {% endif %}
+        {{ip_data1}} ip_data
+
+       <!--<form action="/simple_function/" method="post"
+       <form action="simple_function" method="post">
+            {% csrf_token %}
+            Text:
+            <input type="text" name="param" required>  ## Test with action /simple_function/ <br><br>
+            {{data_external}}
+            <input type="submit" value="Execute External Python Script">
+> -->
+
+        <form action="/blog/external/" method="post">
+            {% csrf_token %}
+            Text:
+            <input type="text" name="param" required>  ## test with external (to print results)<br>
+            {{data_external}} data external
+            {{ip_data1}} ip_data1
+            <input type="submit" value="Execute External Python Script">
+
+
+        </form>
+    </main>
+
+
+
+<head>
+
